@@ -1,4 +1,11 @@
 use actix_web::{web, App, HttpResponse, HttpServer};
+use serde::Deserialize;
+
+#[derive(Deserialize)]
+struct GcdParameters {
+    n: u64,
+    m: u64,
+}
 
 #[actix_web::main]
 async fn main() {
@@ -31,12 +38,6 @@ async fn get_index() -> HttpResponse {
         )
 }
 
-use serde::Deserialize;
-#[derive(Deserialize)]
-struct GcdParameters {
-    n: u64,
-    m: u64,
-}
 
 async fn post_gcd(form: web::Form<GcdParameters>) -> HttpResponse {
     if form.n == 0 || form.m == 0 {
