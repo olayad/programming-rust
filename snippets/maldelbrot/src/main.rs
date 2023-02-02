@@ -42,6 +42,7 @@ fn parse_pair<T: FromStr>(s: &str, separator: char) -> Option<(T, T)> {
     }
 }
 
+//TODO: why is it divided by the bounds?
 fn pixel_to_point(bounds: (usize, usize), pixel: (usize, usize), upper_left: Complex<f64>, lower_right: Complex<f64>) -> Complex<f64> {
     let (width, height) = (lower_right.re - upper_left.re, upper_left.im - lower_right.im);
     Complex {
