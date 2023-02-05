@@ -2,3 +2,5 @@
 - Review of Maldebrot algo
 - Parsing arguments
 - Working through pixel_to_point func
+## 2023.02.04
+- review pixel to point
