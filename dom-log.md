@@ -8,3 +8,6 @@
 - review pixel to point
 ## 2023.02.07
 - review multi-thread with crossbeeam crate
+## 2023.02.11
+- find and replace program, args and regex setup
+- ANSI escape codes
