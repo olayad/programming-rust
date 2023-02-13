@@ -11,3 +11,5 @@
 ## 2023.02.11
 - find and replace program, args and regex setup
 - ANSI escape codes
+## 2023.02.13
+- Rust fundamental types
