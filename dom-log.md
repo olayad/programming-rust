@@ -13,3 +13,5 @@
 - ANSI escape codes
 ## 2023.02.13
 - Rust fundamental types
+## 2023.02.14
+- Rust fundamental types
